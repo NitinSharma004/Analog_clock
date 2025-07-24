@@ -1,0 +1,167 @@
+/* style.css */
+
+
+/* Basic page style and center everything */
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #e3f2fd;
+    /* Light blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Main wrapper column layout */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Analog clock base style */
+
+.clock {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 10px solid #333;
+    border-radius: 50%;
+    background: white;
+}
+
+
+/* Clock hands common style */
+
+.hand {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: bottom;
+    transform: rotate(0deg);
+}
+
+
+/* Specific hands */
+
+.hour {
+    height: 60px;
+    width: 6px;
+    background: #000;
+}
+
+.minute {
+    height: 80px;
+    width: 4px;
+    background: #555;
+}
+
+.second {
+    height: 90px;
+    width: 2px;
+    background: red;
+}
+
+
+/* Center dot of clock */
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    background: black;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Number style */
+
+.number {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* Position each number manually */
+
+.number1 {
+    top: 50px;
+    left: 230px;
+}
+
+.number2 {
+    top: 90px;
+    left: 265px;
+}
+
+.number3 {
+    top: 150px;
+    left: 285px;
+}
+
+.number4 {
+    top: 215px;
+    left: 260px;
+}
+
+.number5 {
+    top: 255px;
+    left: 215px;
+}
+
+.number6 {
+    top: 275px;
+    left: 150px;
+}
+
+.number7 {
+    top: 255px;
+    left: 85px;
+}
+
+.number8 {
+    top: 215px;
+    left: 40px;
+}
+
+.number9 {
+    top: 150px;
+    left: 20px;
+}
+
+.number10 {
+    top: 90px;
+    left: 40px;
+}
+
+.number11 {
+    top: 50px;
+    left: 85px;
+}
+
+.number12 {
+    top: 25px;
+    left: 150px;
+}
+
+
+/* Digital clock style */
+
+.digital {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+}
